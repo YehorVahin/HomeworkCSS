@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Unbounded:wght@200..900&display=swap"
+      rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header container">
+      <div class="name">
+        <div class="main__info">
+          <img
+            class="photo"
+            src="images/image1.png"
+            alt="Фото портрет"
+            width="160"
+            height="160"
+            title="Фото портрет" />
+          <h1>Вагін Єгор</h1>
+        </div>
+        <div class="info">
+          <a href="mailto:yehor.vahin@gmail.com"
+            >&#128231; yehor.vahin@gmail.com</a
+          >
+          <a href="tel:380935115785">&#128222; +38(093)-511-57-85</a>
+          <a href="#about">Про мене</a>
+        </div>
+        <h2>місто Вінниця</h2>
+      </div>
+    </header>
+    <main class="container">
+      <section class="menu">
+        <a href="#">Головна</a>
+        <a href="pages/education.html">Освіта</a>
+        <a href="pages/experience.html">Досвід роботи</a>
+        <a href="pages/hobby.html">Хоббі</a>
+      </section>
+      <section class="education">
+        <h2>Освіта:</h2>
+        <ul class="education__list">
+          <li>Київський національний економічний університет</li>
+          <li>Запорізька політехніка</li>
+          <li>Міжнародний центр ювелірного мистецтва</li>
+          <li>Курси Full Stack Developer в школі GO IT</li>
+        </ul>
+      </section>
+      <section class="experience">
+        <h2>Досвід роботи:</h2>
+        <ul class="experience__list">
+          <li>
+            <h3>Менеджер з продажів</h3>
+            <p>Eco Goal, сонячні електростанції</p>
+          </li>
+          <li>
+            <h3>Продавець-консультант</h3>
+            <p>Comfy</p>
+          </li>
+          <li>
+            <h3>Майстер-ювелір</h3>
+            <p>Dora ювелірна компанія</p>
+          </li>
+        </ul>
+      </section>
+      <section class="about">
+        <div class="card strong">
+          <h3 id="about">Сильні сторони:</h3>
+          <p>
+            Вмію працювати в команді, комунікабельний, швидко засвоюю будь-яку
+            інформацію та адаптуюся до нових реалій роботи.
+          </p>
+        </div>
+        <div class="card weak">
+          <h3>Слабкі сторони:</h3>
+          <p>Прямолінійність, зокрема й щодо керівництва.</p>
+        </div>
+      </section>
+      <section class="form">
+        <form>
+          <fieldset>
+            <legend>Особисті дані</legend>
+            <label for="name"> Ім'я: </label>
+            <input
+              type="text"
+              id="name"
+              name="firstName"
+              minlength="2"
+              required />
+            <label for="email">Пошта:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="theme">Тема звернення:</label>
+            <select name="theme" id="theme">
+              <option value="acquaintance">Знайомство</option>
+              <option value="job">Робота</option>
+              <option value="business">Бізнес</option>
+            </select>
+            <br />
+            <label for="phone">Номер телефону:</label>
+            <input type="tel" id="phone" name="phoneNumber" required />
+            <label for="text">Повідомлення:</label>
+            <textarea name="message" id="text"></textarea>
+            <button type="submit">Відправити</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
