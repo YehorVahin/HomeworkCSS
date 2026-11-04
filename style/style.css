@@ -145,3 +145,10 @@ form {
   gap: 1.25rem;
   grid-template-columns: 1fr 1fr;
 }
+.gallary {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
