@@ -52,6 +52,17 @@ section {
   padding: 3rem 1.25rem 4rem;
   box-sizing: border-box;
 }
+.page {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: 2rem 3rem;
+}
+.page--single {
+  grid-template-columns: minmax(0, 1fr);
+}
+.page__full {
+  grid-column: 1 / -1;
+}
 .header {
   padding-bottom: 2rem;
   border-bottom: 3px solid var(--accent);
