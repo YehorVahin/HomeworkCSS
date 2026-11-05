@@ -161,3 +161,11 @@ form {
   width: 100%;
   height: auto;
 }
+input,
+textarea,
+select {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  padding: 8px;
+}
