@@ -84,7 +84,7 @@
         <form>
           <fieldset class="form__fieldset">
             <legend class="form__legend">Особисті дані</legend>
-            <label for="name"> Ім'я: </label>
+            <label for="name" class="form__label"> Ім'я: </label>
             <input
               class="form__control"
               type="text"
@@ -92,28 +92,28 @@
               name="firstName"
               minlength="2"
               required />
-            <label for="email">Пошта:</label>
+            <label for="email" class="form__label">Пошта:</label>
             <input
               class="form__control"
               type="email"
               id="email"
               name="email"
               required />
-            <label for="theme">Тема звернення:</label>
+            <label for="theme" class="form__label">Тема звернення:</label>
             <select name="theme" id="theme" class="form__control">
               <option value="acquaintance">Знайомство</option>
               <option value="job">Робота</option>
               <option value="business">Бізнес</option>
             </select>
             <br />
-            <label for="phone">Номер телефону:</label>
+            <label for="phone" class="form__label">Номер телефону:</label>
             <input
               class="form__control"
               type="tel"
               id="phone"
               name="phoneNumber"
               required />
-            <label for="text">Повідомлення:</label>
+            <label for="text" class="form__label">Повідомлення:</label>
             <textarea
               name="message"
               id="text"

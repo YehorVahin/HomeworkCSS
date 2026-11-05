@@ -221,9 +221,10 @@ select {
   padding: 8px;
 }
 .form__fieldset {
-  display: grid;
-  gap: 0.6rem;
+  display: block;
+  width: 100%;
   min-width: 0;
+  max-width: 100%;
   margin: 0;
   padding: 1.5rem;
   border: 1px solid var(--line);
@@ -235,8 +236,9 @@ select {
   font-weight: 600;
 }
 .form__button {
-  justify-self: start;
-  margin-top: 0.5rem;
+  display: block;
+  max-width: 100%;
+  margin-top: 1.25rem;
   padding: 0.7rem 1.6rem;
   border: 0;
   border-radius: var(--radius);
@@ -247,7 +249,9 @@ select {
   cursor: pointer;
 }
 .form__control {
+  display: block;
   width: 100%;
+  min-width: 0;
   max-width: 100%;
   padding: 0.6rem 0.8rem;
   border: 1px solid var(--line);
@@ -265,9 +269,39 @@ select {
   min-height: 7rem;
   resize: vertical;
 }
+.form__label {
+  display: block;
+  margin-top: 0.9rem;
+  margin-bottom: 0.3rem;
+}
 @media (max-width: 800px) {
   .page,
   .about {
     grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .menu__link {
+    flex: 1 1 40%;
+  }
+}
+@media (max-width: 500px) {
+  .form__fieldset {
+    padding: 1rem 0.75rem;
+  }
+  .form__legend,
+  .form__label,
+  .form__control,
+  .form__button {
+    font-size: 0.875rem;
+  }
+  .form__control {
+    padding: 0.5rem 0.6rem;
+  }
+  .form__button {
+    width: 100%;
   }
 }
