@@ -265,3 +265,9 @@ select {
   min-height: 7rem;
   resize: vertical;
 }
+@media (max-width: 800px) {
+  .page,
+  .about {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
