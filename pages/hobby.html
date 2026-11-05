@@ -8,34 +8,40 @@
   </head>
   <body>
     <header class="header container">
-      <h1>My hobby:</h1>
+      <h1 class="header__info">My hobby:</h1>
     </header>
-    <main class="container">
-      <section class="menu">
-        <a href="../index.html">Головна</a>
-        <a href="education.html">Освіта</a>
-        <a href="experience.html">Досвід роботи</a>
-        <a href="hobby.html">Хоббі</a>
-      </section>
+    <main class="container page">
+      <nav class="menu">
+        <a href="../index.html" class="menu__link">Головна</a>
+        <a href="education.html" class="menu__link">Освіта</a>
+        <a href="experience.html" class="menu__link">Досвід роботи</a>
+        <a href="hobby.html" class="menu__link">Хоббі</a>
+      </nav>
       <div class="gallary">
-        <img
-          src="../images/hobby1.jpg"
-          alt="Гра в пейтбол"
-          title="hobby_paintball"
-          class="image" />
-        <p>Гра в пейнтбол</p>
-        <img
-          src="../images/hobby2.jpg"
-          alt="Старт гри в пейнтбол"
-          title="hobby_paintball"
-          class="image" />
-        <p>Початок гри</p>
-        <img
-          src="../images/hobby3.jpg"
-          alt="Дозарядка шариків"
-          title="hobby_paintball"
-          class="image" />
-        <p>Дозарядка шариків</p>
+        <figure class="gallery__item">
+          <img
+            src="../images/hobby1.jpg"
+            alt="Гра в пейтбол"
+            title="hobby_paintball"
+            class="gallery__image" />
+          <figcaption class="gallery__caption">Гра в пейнтбол</figcaption>
+        </figure>
+        <figure class="gallery__item">
+          <img
+            class="gallery__image"
+            src="../images/hobby2.jpg"
+            alt="Старт гри в пейнтбол"
+            title="hobby_paintball" />
+          <figcaption class="gallery__caption">Початок гри</figcaption>
+        </figure>
+        <figure class="gallery__item">
+          <img
+            class="gallery__image"
+            src="../images/hobby3.jpg"
+            alt="Дозарядка кульок"
+            title="hobby_paintball" />
+          <figcaption class="gallery__caption">Дозарядка кульок</figcaption>
+        </figure>
       </div>
     </main>
   </body>
